@@ -7,7 +7,7 @@ local http = game:GetService("HttpService")
 local module = {
 	version = 1; -- Don't touch unless you don't care for updates later on, or are modifying it yourself
 	lists = {
-		"https://raw.githubusercontent.com/GalacticArc/robloxscripts/master/blacklist.json"; -- Default primary list, keep this if you want up to date spam filters
+		"https://raw.githubusercontent.com/paulocezarnbr/Anti-spam-roblox-chat-module/main/blacklist.json"; -- Default primary list, keep this if you want up to date spam filters
 	};
 	filters = {};
 	setting = {

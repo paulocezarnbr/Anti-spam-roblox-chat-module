@@ -1,11 +1,8 @@
---[[
-	The community driven filter module
-	Contributors so far:
-		- Semaphorism	
+	
 ]]
 local http = game:GetService("HttpService")
 local module = {
-	version = 1; -- Don't touch unless you don't care for updates later on, or are modifying it yourself
+	version = 1; 
 	lists = {
 		"https://raw.githubusercontent.com/paulocezarnbr/Anti-spam-roblox-chat-module/main/blacklist.json"; -- Default primary list, keep this if you want up to date spam filters
 	};
@@ -117,7 +114,7 @@ function module.checkVersion()
 	end
 	local success, err = pcall(function()
 		local response = http:RequestAsync(
-			{ Url = "https://raw.githubusercontent.com/GalacticArc/robloxscripts/master/filter-version.json"; Method = "GET"; }
+			{ Url = "https://raw.githubusercontent.com/paulocezarnbr/Anti-spam-roblox-chat-module/main/filter-version.json"; Method = "GET"; }
 		)
 	 
 		-- Inspect the response table
